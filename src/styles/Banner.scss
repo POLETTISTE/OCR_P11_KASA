@@ -1,0 +1,50 @@
+@import "./App.scss";
+
+/* BANNER TOP */
+.App-banner-top {
+  margin: 20px;
+  display: flex;
+  color: $color-red;
+  font-size: 12px;
+  & ul {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    & li {
+      margin-left: 15px;
+      //rajouter souligner sous first child
+    }
+  }
+  & img {
+    width: 40%;
+    height: 40%;
+  }
+}
+
+/* BANNER BOTTOM */
+
+.App-banner-bottom {
+  margin: 20px;
+  position: relative;
+  border-radius: 10px;
+  background-image: url("../assets/banner-img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #595959;
+  background-blend-mode: overlay;
+  width: auto;
+  height: 111px;
+
+  & h1 {
+    margin-top: 0px;
+    width: 220px;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: start;
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,26 @@
+/* TEXT COLOR */
+$color-red: #ff6060;
+/* FONTS */
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  box-sizing: content-box;
+  width: 100%;
+}
+h1 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  /* or 24px */
+}
+p {
+  color: $color-red;
+}
+li {
+  list-style-type: none;
+}
