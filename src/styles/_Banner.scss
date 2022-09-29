@@ -1,6 +1,7 @@
-@import "./App.scss";
+@import "src/styles/_App.scss";
 
 /* BANNER TOP */
+
 .App-banner-top {
   margin: 20px;
   display: flex;
@@ -14,6 +15,9 @@
     & li {
       margin-left: 15px;
       //rajouter souligner sous first child
+      &:first-child {
+        text-decoration: underline;
+      }
     }
   }
   & img {

@@ -1,0 +1,78 @@
+/* TEXT COLOR */
+/* FONTS */
+body {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  box-sizing: content-box;
+  width: 100%;
+}
+
+h1 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  /* or 24px */
+}
+
+p {
+  color: #ff6060;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* BANNER TOP */
+.App-banner-top {
+  margin: 20px;
+  display: flex;
+  color: #ff6060;
+  font-size: 12px;
+}
+.App-banner-top ul {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+.App-banner-top ul li {
+  margin-left: 15px;
+}
+.App-banner-top ul li:first-child {
+  text-decoration: underline;
+}
+.App-banner-top img {
+  width: 40%;
+  height: 40%;
+}
+
+/* BANNER BOTTOM */
+.App-banner-bottom {
+  margin: 20px;
+  position: relative;
+  border-radius: 10px;
+  background-image: url("../assets/banner-img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #595959;
+  background-blend-mode: overlay;
+  width: auto;
+  height: 111px;
+}
+.App-banner-bottom h1 {
+  margin-top: 0px;
+  width: 220px;
+  height: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: start;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=style.css.map */

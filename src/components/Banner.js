@@ -1,8 +1,10 @@
 import React from "react";
 import logo from "../assets/logo.png";
-import "../styles/Banner.scss";
+import "../styles/_Banner.scss";
 
-const Banner = () => {
+const Banner = (props) => {
+  const { color } = props;
+  console.log(color);
   return (
     <header className="App-banner">
       <div className="App-banner-top">
