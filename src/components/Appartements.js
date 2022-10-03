@@ -1,4 +1,4 @@
-import data from "./Data";
+import data from '../data/Data'
 
 const Appartements = () => {
   return (
@@ -12,7 +12,7 @@ const Appartements = () => {
         </ul>
       ))}
     </div>
-  );
-};
+  )
+}
 
-export default Appartements;
+export default Appartements
