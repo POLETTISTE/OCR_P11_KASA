@@ -1,0 +1,18 @@
+footer {
+  background-color: black;
+  height: 209px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer img {
+  width: auto;
+  height: 39.44px;
+}
+
+.footer-mentions {
+  color: white;
+  font-size: 12px;
+}

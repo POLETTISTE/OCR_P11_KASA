@@ -1,14 +1,32 @@
-import { Link } from 'react-router-dom'
-import logo from '../..//assets/logo.png'
+import { NavLink } from 'react-router-dom'
+import logo from '../../assets/logo-navbar.png'
 
 const Navbar = () => {
+  let activeStyle = {
+    textDecoration: 'underline',
+  }
+
   return (
     <header>
       <div className="navbar">
-        <img src={logo} alt="logo de Kasa" />
+        <NavLink to="/" className="logo-img">
+          <img src={logo} alt="logo de Kasa" />
+        </NavLink>
+
         <nav>
-          <Link to="/">ACCUEIL</Link>
-          <Link to="/about">A PROPOS</Link>
+          <NavLink
+            to="/"
+            end
+            style={({ isActive }) => (isActive ? activeStyle : undefined)}
+          >
+            ACCUEIL
+          </NavLink>
+          <NavLink
+            to="/about"
+            style={({ isActive }) => (isActive ? activeStyle : undefined)}
+          >
+            A PROPOS
+          </NavLink>
         </nav>
       </div>
     </header>

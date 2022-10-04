@@ -60,26 +60,44 @@ li {
   display: flex;
   color: #ff6060;
   font-size: 12px;
+  align-items: center;
 }
 .navbar nav {
   display: flex;
   width: 100%;
+  height: 100%;
   justify-content: flex-end;
   align-items: center;
 }
 .navbar nav a {
   margin-left: 15px;
   text-decoration: none;
+  color: #ff6060;
 }
 .navbar nav a:visited {
   color: #ff6060;
 }
-.navbar nav a:first-child {
-  text-decoration: underline;
-}
 .navbar img {
-  width: 40%;
-  height: 40%;
+  width: 100%;
+}
+
+footer {
+  background-color: black;
+  height: 209px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer img {
+  width: auto;
+  height: 39.44px;
+}
+
+.footer-mentions {
+  color: white;
+  font-size: 12px;
 }
 
 /* TEXT COLOR */
@@ -186,6 +204,7 @@ li {
   font-size: 14px;
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
