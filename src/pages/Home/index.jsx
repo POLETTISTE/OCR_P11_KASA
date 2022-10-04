@@ -1,12 +1,13 @@
-import Banner from '../../components/Banner/index'
 import Appartements from '../../components/Appartements'
-
+import Banner from '../../components/Banner'
 function Home() {
   return (
-    <div className="App">
-      <Banner color="rouge" />
-      <Banner color="bleu" />
-      <Appartements />
+    <div>
+      <Banner />
+
+      <div className="accueil">
+        <Appartements />
+      </div>
     </div>
   )
 }

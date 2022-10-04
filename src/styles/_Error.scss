@@ -1,0 +1,26 @@
+@import '../styles/App.scss';
+
+.title-404 {
+  color: $color-red;
+  font-size: 96px;
+  font-weight: bold;
+  line-height: 143%;
+  text-align: center;
+  vertical-align: center;
+}
+
+.message-404,
+.return-home {
+  color: $color-red;
+  font-style: medium;
+  font-size: 18px;
+  line-height: 143%;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.return-home {
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+}

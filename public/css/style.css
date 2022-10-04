@@ -26,32 +26,92 @@ li {
   list-style-type: none;
 }
 
-/* BANNER TOP */
-.App-banner-top {
+/* TEXT COLOR */
+/* FONTS */
+body {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  box-sizing: content-box;
+  width: 100%;
+}
+
+h1 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  /* or 24px */
+}
+
+p {
+  color: #ff6060;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* NAVBAR */
+.navbar {
   margin: 20px;
   display: flex;
   color: #ff6060;
   font-size: 12px;
 }
-.App-banner-top ul {
+.navbar nav {
   display: flex;
   width: 100%;
   justify-content: flex-end;
   align-items: center;
 }
-.App-banner-top ul li {
+.navbar nav a {
   margin-left: 15px;
+  text-decoration: none;
 }
-.App-banner-top ul li:first-child {
+.navbar nav a:visited {
+  color: #ff6060;
+}
+.navbar nav a:first-child {
   text-decoration: underline;
 }
-.App-banner-top img {
+.navbar img {
   width: 40%;
   height: 40%;
 }
 
-/* BANNER BOTTOM */
-.App-banner-bottom {
+/* TEXT COLOR */
+/* FONTS */
+body {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  box-sizing: content-box;
+  width: 100%;
+}
+
+h1 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  /* or 24px */
+}
+
+p {
+  color: #ff6060;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* BANNER TOP */
+.banner-top {
   margin: 20px;
   position: relative;
   border-radius: 10px;
@@ -63,7 +123,7 @@ li {
   width: auto;
   height: 111px;
 }
-.App-banner-bottom h1 {
+.banner-top h1 {
   margin-top: 0px;
   width: 220px;
   height: fit-content;
@@ -73,6 +133,59 @@ li {
   transform: translate(-50%, -50%);
   text-align: start;
   color: #ffffff;
+}
+
+/* TEXT COLOR */
+/* FONTS */
+body {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  box-sizing: content-box;
+  width: 100%;
+}
+
+h1 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  /* or 24px */
+}
+
+p {
+  color: #ff6060;
+}
+
+li {
+  list-style-type: none;
+}
+
+.title-404 {
+  color: #ff6060;
+  font-size: 96px;
+  font-weight: bold;
+  line-height: 143%;
+  text-align: center;
+  vertical-align: center;
+}
+
+.message-404,
+.return-home {
+  color: #ff6060;
+  font-style: medium;
+  font-size: 18px;
+  line-height: 143%;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.return-home {
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

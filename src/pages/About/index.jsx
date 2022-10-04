@@ -1,9 +1,7 @@
-import Banner from '../../components/Banner'
-
 const About = () => {
   return (
     <div>
-      <Banner />
+      <h1>page à propos</h1>
     </div>
   )
 }
