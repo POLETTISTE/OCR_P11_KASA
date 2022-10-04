@@ -1,5 +1,5 @@
-import Banner from '../components/Banner'
-import Appartements from '../components/Appartements'
+import Banner from '../../components/Banner/index'
+import Appartements from '../../components/Appartements'
 
 function Home() {
   return (

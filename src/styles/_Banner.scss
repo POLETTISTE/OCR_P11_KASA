@@ -1,4 +1,4 @@
-@import "src/styles/_App.scss";
+@import 'src/styles/_App.scss';
 
 /* BANNER TOP */
 
@@ -7,14 +7,18 @@
   display: flex;
   color: $color-red;
   font-size: 12px;
-  & ul {
+  & nav {
     display: flex;
     width: 100%;
     justify-content: flex-end;
     align-items: center;
-    & li {
+    & a {
       margin-left: 15px;
+      text-decoration: none;
       //rajouter souligner sous first child
+      &:visited {
+        color: $color-red;
+      }
       &:first-child {
         text-decoration: underline;
       }
@@ -32,7 +36,7 @@
   margin: 20px;
   position: relative;
   border-radius: 10px;
-  background-image: url("../assets/banner-img.png");
+  background-image: url('../assets/banner-img.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #595959;

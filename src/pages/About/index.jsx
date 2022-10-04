@@ -1,9 +1,9 @@
-import React from 'react'
+import Banner from '../../components/Banner'
 
 const About = () => {
   return (
     <div>
-      <h1>A propos</h1>
+      <Banner />
     </div>
   )
 }
