@@ -3,7 +3,7 @@ import Banner from '../../components/Banner'
 function Home() {
   return (
     <div>
-      <Banner />
+      <Banner text="Chez vous, partout et ailleurs" bg="banner-home" />
 
       <div className="accueil">
         <Appartements />
