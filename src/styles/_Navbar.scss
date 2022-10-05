@@ -10,6 +10,7 @@
   color: $color-red;
   font-size: 12px;
   align-items: center;
+  margin-bottom: 40px;
 
   & nav {
     display: flex;
@@ -29,5 +30,26 @@
   }
   & img {
     width: 100%;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .navbar {
+    & nav {
+      & a {
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@media all and (min-width: 768px) {
+  .navbar {
+    & nav {
+      & a {
+        font-size: 24px;
+        margin-left: 60px;
+      }
+    }
   }
 }

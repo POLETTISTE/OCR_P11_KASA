@@ -34,3 +34,13 @@
     color: #ffffff;
   }
 }
+
+@media all and (min-width: 768px) {
+  .banner {
+    height: 223px;
+    & span {
+      font-size: 48px;
+      width: 705px;
+    }
+  }
+}

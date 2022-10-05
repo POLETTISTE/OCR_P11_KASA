@@ -1,6 +1,7 @@
 @import '../styles/App.scss';
 
 .title-404 {
+  margin: 0px;
   color: $color-red;
   font-size: 96px;
   font-weight: bold;
@@ -8,24 +9,42 @@
   text-align: center;
   vertical-align: center;
   margin-top: 100px;
-  margin-bottom: 0px;
 }
 
 .message-404,
 .return-home {
+  margin: 0px;
+  margin-left: 30px;
+  margin-right: 30px;
+  height: 52px;
   color: $color-red;
   font-style: medium;
   font-size: 18px;
   line-height: 143%;
   text-align: center;
   vertical-align: bottom;
-  margin-top: 0px;
   margin-bottom: 50px;
 }
 
 .return-home {
+  margin: 0px;
   font-size: 14px;
   display: flex;
   justify-content: center;
+  margin-top: 80px;
   margin-bottom: 20px;
+}
+@media all and (min-width: 768px) {
+  .title-404 {
+    font-size: 288px;
+    margin-top: 50px;
+  }
+
+  .message-404 {
+    font-size: 36px;
+  }
+
+  .return-home {
+    font-size: 18px;
+  }
 }

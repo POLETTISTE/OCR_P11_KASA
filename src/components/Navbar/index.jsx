@@ -19,13 +19,13 @@ const Navbar = () => {
             end
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
           >
-            ACCUEIL
+            Accueil
           </NavLink>
           <NavLink
             to="/about"
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
           >
-            A PROPOS
+            A Propos
           </NavLink>
         </nav>
       </div>
