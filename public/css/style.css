@@ -175,6 +175,7 @@ li {
 @media all and (min-width: 768px) {
   .banner {
     height: 223px;
+    border-radius: 25px;
   }
   .banner span {
     font-size: 48px;

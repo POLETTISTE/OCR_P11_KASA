@@ -38,6 +38,8 @@
 @media all and (min-width: 768px) {
   .banner {
     height: 223px;
+    border-radius: 25px;
+
     & span {
       font-size: 48px;
       width: 705px;
