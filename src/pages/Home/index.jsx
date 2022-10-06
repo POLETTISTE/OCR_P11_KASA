@@ -9,6 +9,8 @@ function Home() {
 
       <div className="thumb-gallery">
         <Thumb />
+        <Thumb />
+        <Thumb />
       </div>
 
       <div className="accueil">

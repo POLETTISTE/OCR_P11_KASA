@@ -285,14 +285,30 @@ li {
   list-style-type: none;
 }
 
+.thumb-gallery {
+  margin: 20px;
+  display: grid;
+}
+
+@media all and (min-width: 768px) {
+  .thumb-gallery {
+    background-color: #f6f6f6;
+    border-radius: 25px;
+  }
+}
 .thumb {
-  width: 340px;
-  height: 340px;
+  margin: 0;
+  width: 283px;
+  height: 255px;
+  border-radius: 10px;
+  margin-bottom: 10px;
   background-color: #ff6060;
 }
 .thumb p {
+  margin: 0;
   color: white;
   display: flex;
+  width: 100%;
   height: 100%;
   justify-content: flex-start;
   align-items: flex-end;
