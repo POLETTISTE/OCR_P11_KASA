@@ -8,9 +8,9 @@ function Home() {
       <Banner text="Chez vous, partout et ailleurs" bg="banner-home" />
 
       <div className="thumb-gallery">
-        <Thumb />
-        <Thumb />
-        <Thumb />
+        <Thumb text={'texte de la photo'} />
+        <Thumb text={'texte de la photo'} />
+        <Thumb text={'texte de la photo'} />
       </div>
 
       <div className="accueil">

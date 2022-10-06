@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import About from './pages/About'
 import Home from './pages/Home'
 import Error from './pages/Error'
+import Logement from './pages/Logement'
 
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
@@ -20,6 +21,8 @@ root.render(
       <Routes>
         <Route exact path="/" element={<Home />}></Route>
         <Route path="/About" element={<About />}></Route>
+        <Route path="/Logement" element={<Logement />}></Route>
+
         <Route path="*" element={<Error />}></Route>
       </Routes>
       <Footer />

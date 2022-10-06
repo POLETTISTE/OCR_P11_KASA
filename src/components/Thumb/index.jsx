@@ -1,10 +1,11 @@
-import React from 'react'
 //mapper les cards a l'intérieur
 
-const Thumb = () => {
+const Thumb = (props) => {
+  const text = props.text
+  const bg = props.bg
   return (
-    <div className="thumb">
-      <p>Titre de la location</p>
+    <div className={` thumb  `}>
+      <p>{text}</p>
     </div>
   )
 }

@@ -286,25 +286,43 @@ li {
 }
 
 .thumb-gallery {
+  border-radius: 25px;
+  padding: 40px;
   margin: 20px;
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  background-color: #f6f6f6;
+  grid-gap: 40px;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 768px) and (max-width: 991px) {
   .thumb-gallery {
     background-color: #f6f6f6;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media all and (max-width: 767px) {
+  .thumb-gallery {
+    padding: 0px;
+    grid-gap: 20px;
     border-radius: 25px;
+    grid-template-columns: 1fr;
+    background-color: transparent;
   }
 }
 .thumb {
   margin: 0;
-  width: 283px;
-  height: 255px;
+  width: 100%;
+  height: 350px;
   border-radius: 10px;
   margin-bottom: 10px;
   background-color: #ff6060;
+  background-blend-mode: overlay;
 }
 .thumb p {
+  font-size: 18px;
+  line-height: 143%;
   margin: 0;
   color: white;
   display: flex;
@@ -312,6 +330,198 @@ li {
   height: 100%;
   justify-content: flex-start;
   align-items: flex-end;
+  position: relative;
+  bottom: 3%;
+  left: 3%;
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .thumb {
+    height: 300px;
+  }
+}
+@media all and (max-width: 767px) {
+  .thumb {
+    height: 255px;
+  }
+}
+/* TEXT COLOR */
+/* FONTS */
+body {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  box-sizing: content-box;
+  width: 100%;
+}
+
+h1 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  /* or 24px */
+}
+
+p {
+  color: #ff6060;
+}
+
+li {
+  list-style-type: none;
+}
+
+.logement-image {
+  background-color: red;
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.logement-infos {
+  display: flex;
+  flex-direction: column;
+}
+
+.logement-nom {
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #ff6060;
+  font-size: 18px;
+  line-height: 143%;
+  text-align: Left;
+  vertical-align: Bottom;
+  font-weight: 500;
+}
+
+.logement-localisation {
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #ff6060;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 143%;
+  text-align: Left;
+  vertical-align: Bottom;
+}
+
+.logement-tags {
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 84px;
+  height: 18px;
+  border-radius: 5px;
+  background-color: #ff6060;
+  font-size: 10px;
+  color: white;
+  line-height: 143%;
+}
+
+.proprietaire-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logement-etoiles {
+  margin: 20px;
+  color: #ff6060;
+  font-size: 18px;
+}
+
+.proprietaire-infos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.logement-proprietaire {
+  color: #ff6060;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 143%;
+  margin-right: 10.5px;
+}
+
+.logement-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: grey;
+}
+
+.dropdowns {
+  display: flex;
+  flex-direction: column;
+}
+
+.logement-dropdown {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.logement-dropdown-title-arrow {
+  z-index: 1;
+  border-radius: 5px;
+  display: flex;
+  width: 100%;
+  background-color: #ff6060;
+}
+.logement-dropdown-title-arrow h3 {
+  margin: 0;
+  height: 29.93px;
+  padding-left: 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18.54px;
+  display: flex;
+  align-items: center;
+}
+.logement-dropdown-title-arrow p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  color: white;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18.54px;
+}
+
+.logement-dropdown-texte {
+  position: relative;
+  bottom: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 29.93px;
+  width: 100%;
+  background-color: #f6f6f6;
+}
+.logement-dropdown-texte p {
+  font-size: 12px;
+  font-weight: 400;
+  padding-left: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

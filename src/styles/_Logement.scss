@@ -1,0 +1,150 @@
+@import '../styles/App.scss';
+
+.logement-image {
+  background-color: red;
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.logement-infos {
+  display: flex;
+  flex-direction: column;
+}
+
+.logement-nom {
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: $color-red;
+  font-size: 18px;
+  line-height: 143%;
+  text-align: Left;
+  vertical-align: Bottom;
+  font-weight: 500;
+}
+.logement-localisation {
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: $color-red;
+  font-size: 14px;
+  font-weight: 500;
+
+  line-height: 143%;
+  text-align: Left;
+  vertical-align: Bottom;
+}
+
+.logement-tags {
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 84px;
+  height: 18px;
+  border-radius: 5px;
+  background-color: $color-red;
+  font-size: 10px;
+  color: white;
+  line-height: 143%;
+}
+
+.proprietaire-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logement-etoiles {
+  margin: 20px;
+  color: $color-red;
+  font-size: 18px;
+}
+
+.proprietaire-infos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.logement-proprietaire {
+  color: $color-red;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 143%;
+  margin-right: 10.5px;
+}
+.logement-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: grey;
+}
+
+.dropdowns {
+  display: flex;
+  flex-direction: column;
+}
+
+.logement-dropdown {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.logement-dropdown-title-arrow {
+  z-index: 1;
+  border-radius: 5px;
+  display: flex;
+  width: 100%;
+  background-color: $color-red;
+
+  h3 {
+    margin: 0;
+    height: 29.93px;
+    padding-left: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18.54px;
+    display: flex;
+    align-items: center;
+  }
+  p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18.54px;
+  }
+}
+.logement-dropdown-texte {
+  position: relative;
+  bottom: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 29.93px;
+  width: 100%;
+  background-color: #f6f6f6;
+  p {
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 10px;
+  }
+}

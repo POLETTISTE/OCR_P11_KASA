@@ -1,9 +1,9 @@
-import Banner from '../../components/Banner'
+import Dropdown from '../../components/Dropdown'
 
 const About = () => {
   return (
     <div>
-      <Banner bg="banner-about" />
+      <Dropdown />
     </div>
   )
 }

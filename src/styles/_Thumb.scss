@@ -1,25 +1,44 @@
 @import '../styles/App.scss';
 
 .thumb-gallery {
+  border-radius: 25px;
+  padding: 40px;
   margin: 20px;
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  background-color: #f6f6f6;
+  grid-gap: 40px;
 }
-@media all and (min-width: 768px) {
+@media all and (min-width: 768px) and (max-width: 991px) {
   .thumb-gallery {
     background-color: #f6f6f6;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media all and (max-width: 767px) {
+  .thumb-gallery {
+    padding: 0px;
+    grid-gap: 20px;
+
     border-radius: 25px;
+    grid-template-columns: 1fr;
+    background-color: transparent;
   }
 }
 
 .thumb {
   margin: 0;
-  //   width: 335px;
-  width: 283px;
-  height: 255px;
+  width: 100%;
+  height: 350px;
   border-radius: 10px;
   margin-bottom: 10px;
   background-color: $color-red;
+  background-blend-mode: overlay;
   p {
+    font-size: 18px;
+    line-height: 143%;
     margin: 0;
     color: white;
     display: flex;
@@ -27,5 +46,20 @@
     height: 100%;
     justify-content: flex-start;
     align-items: flex-end;
+    position: relative;
+    bottom: 3%;
+    left: 3%;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .thumb {
+    height: 300px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .thumb {
+    height: 255px;
   }
 }
