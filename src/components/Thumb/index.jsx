@@ -2,7 +2,7 @@
 
 const Thumb = (props) => {
   const text = props.text
-  const bg = props.bg
+  // const bg = props.bg
   return (
     <div className={` thumb  `}>
       <p>{text}</p>
