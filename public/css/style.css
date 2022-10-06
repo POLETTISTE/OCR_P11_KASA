@@ -257,5 +257,45 @@ li {
     font-size: 18px;
   }
 }
+/* TEXT COLOR */
+/* FONTS */
+body {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  box-sizing: content-box;
+  width: 100%;
+}
+
+h1 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  /* or 24px */
+}
+
+p {
+  color: #ff6060;
+}
+
+li {
+  list-style-type: none;
+}
+
+.thumb {
+  width: 340px;
+  height: 340px;
+  background-color: #ff6060;
+}
+.thumb p {
+  color: white;
+  display: flex;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
 
 /*# sourceMappingURL=style.css.map */
