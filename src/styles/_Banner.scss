@@ -6,19 +6,19 @@
   margin: 20px;
   position: relative;
   border-radius: 10px;
-  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #595959;
   background-blend-mode: overlay;
   width: auto;
+  background-size: cover;
   &-home {
     background-image: url('../assets/banner-home.png');
     height: 111px;
   }
 
   &-about {
-    background-image: url('../assets/banner-about.png');
+    background-image: url('../assets/banner-about-small.png');
     height: 223px;
   }
 
@@ -40,6 +40,11 @@
   .banner {
     height: 223px;
     border-radius: 25px;
+    &-about {
+      background-image: url('../assets/banner-about.png');
+
+      height: 223px;
+    }
 
     & span {
       font-size: 48px;
