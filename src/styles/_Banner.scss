@@ -12,13 +12,14 @@
   background-color: #595959;
   background-blend-mode: overlay;
   width: auto;
-  height: 111px;
   &-home {
     background-image: url('../assets/banner-home.png');
+    height: 111px;
   }
 
   &-about {
     background-image: url('../assets/banner-about.png');
+    height: 223px;
   }
 
   & span {

@@ -151,13 +151,14 @@ li {
   background-color: #595959;
   background-blend-mode: overlay;
   width: auto;
-  height: 111px;
 }
 .banner-home {
   background-image: url("../assets/banner-home.png");
+  height: 111px;
 }
 .banner-about {
   background-image: url("../assets/banner-about.png");
+  height: 223px;
 }
 .banner span {
   font-size: 24px;
