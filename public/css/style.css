@@ -483,6 +483,7 @@ li {
   z-index: 1;
   border-radius: 5px;
   display: flex;
+  justify-content: space-between;
   width: 100%;
   background-color: #ff6060;
 }
@@ -498,15 +499,8 @@ li {
   display: flex;
   align-items: center;
 }
-.logement-dropdown-title-arrow p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  color: white;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 18.54px;
+.logement-dropdown-title-arrow img {
+  width: 20px;
 }
 
 .logement-dropdown-texte {
@@ -519,14 +513,19 @@ li {
   margin: 0;
   margin-left: 20px;
   margin-right: 20px;
-  height: 29.93px;
+  height: fit-content;
   width: 100%;
   background-color: #f6f6f6;
 }
 .logement-dropdown-texte p {
   font-size: 12px;
-  font-weight: 400;
   padding-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-size: 13px;
+  line-height: 18.54px;
 }
 
 /*# sourceMappingURL=style.css.map */
