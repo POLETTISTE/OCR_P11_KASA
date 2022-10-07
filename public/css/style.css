@@ -500,7 +500,8 @@ li {
   align-items: center;
 }
 .logement-dropdown-title-arrow img {
-  width: 20px;
+  width: 18.42px;
+  margin-right: 5px;
 }
 
 .logement-dropdown-texte {
@@ -524,8 +525,18 @@ li {
   justify-content: center;
   align-items: center;
   margin: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
   font-size: 13px;
   line-height: 18.54px;
+}
+
+.no-rotate {
+  transform: rotate(180deg);
+}
+
+.rotate {
+  transform: rotate(0deg);
 }
 
 /*# sourceMappingURL=style.css.map */
