@@ -477,6 +477,7 @@ li {
   margin: 0;
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 10px;
 }
 
 .logement-dropdown-title-arrow {
@@ -532,11 +533,13 @@ li {
 }
 
 .no-rotate {
-  transform: rotate(180deg);
+  rotate: 180deg;
+  transition-duration: 500ms;
 }
 
 .rotate {
-  transform: rotate(0deg);
+  rotate: 0deg;
+  transition-duration: 500ms;
 }
 
 /*# sourceMappingURL=style.css.map */
