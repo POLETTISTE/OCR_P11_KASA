@@ -1,11 +1,14 @@
-//mapper les cards a l'intérieur
-
 const Thumb = (props) => {
-  const text = props.text
-  // const bg = props.bg
+  const texte = props.texte
+  const image = props.image
   return (
-    <div className={` thumb  `}>
-      <p>{text}</p>
+    <div className="logement-infos">
+      <img
+        src={image}
+        alt="appartement en location"
+        className="logement-image"
+      />
+      <p className="logement-nom">{texte}</p>
     </div>
   )
 }
