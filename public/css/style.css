@@ -142,6 +142,9 @@ li {
 
 /* BANNER TOP */
 .banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 20px;
   position: relative;
   border-radius: 10px;
@@ -149,7 +152,6 @@ li {
   background-repeat: no-repeat;
   background-color: #595959;
   background-blend-mode: overlay;
-  width: auto;
   background-size: cover;
 }
 .banner-home {
@@ -175,6 +177,7 @@ li {
 
 @media all and (min-width: 768px) {
   .banner {
+    width: 100%;
     height: 223px;
     border-radius: 25px;
   }
@@ -378,27 +381,38 @@ li {
   list-style-type: none;
 }
 
-.logement-image {
-  margin: 0;
-  margin-left: 20px;
-  margin-right: 20px;
-  border-radius: 10px;
-}
-
-.logement-infos {
+.home-gallerie {
   display: flex;
   flex-direction: column;
 }
 
-.logement-nom {
-  margin: 0;
+.logement-infos-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-left: 20px;
   margin-right: 20px;
-  color: #ff6060;
+}
+
+.logement-image {
+  margin: 0;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 340px;
+  height: 255px;
+}
+
+.logement-nom {
+  width: 90%;
+  max-width: 340px;
+  position: relative;
+  left: 10px;
+  bottom: 55px;
+  margin: 0;
+  color: white;
   font-size: 18px;
   line-height: 143%;
-  text-align: Left;
-  vertical-align: Bottom;
   font-weight: 500;
 }
 

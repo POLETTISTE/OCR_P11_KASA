@@ -1,6 +1,5 @@
 import Banner from '../../components/Banner'
 import Thumb from '../../components/Thumb'
-import LogementLocalisation from '../../components/LogementLocalisation'
 import dataLogement from '../../data/data.json'
 import React, { Fragment, useEffect, useState } from 'react'
 
@@ -28,18 +27,12 @@ function Home() {
         {appartements &&
           appartements.map((appartement, index) => {
             return (
-              <div className="logement">
-                <Thumb
-                  key={index}
-                  className="home-gallerie-thumb"
-                  texte={appartement.title}
-                  image={appartement.cover}
-                />
-                <LogementLocalisation
-                  localisation={appartement.location}
-                  className="logement-localisation"
-                />
-              </div>
+              <Thumb
+                key={index}
+                className="logement-infos-home"
+                texte={appartement.title}
+                image={appartement.cover}
+              />
             )
           })}
       </div>
