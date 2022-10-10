@@ -1,11 +1,11 @@
-import Thumb from '../Thumb'
+// import Thumb from '../Thumb'
 
-const LogementImage = () => {
-  return (
-    <div className="logement-image">
-      <Thumb />
-    </div>
-  )
-}
+// const LogementImage = () => {
+//   return (
+//     <div className="logement-image">
+//       <Thumb />
+//     </div>
+//   )
+// }
 
-export default LogementImage
+// export default LogementImage

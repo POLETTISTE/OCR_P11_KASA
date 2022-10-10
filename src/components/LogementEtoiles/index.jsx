@@ -1,7 +1,8 @@
 import React from 'react'
 
-const LogementEtoiles = () => {
-  return <div className="logement-etoiles">*****</div>
+const LogementEtoiles = (props) => {
+  const etoiles = props.etoiles
+  return <div className="logement-etoiles">{etoiles}*</div>
 }
 
 export default LogementEtoiles

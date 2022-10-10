@@ -1,7 +1,8 @@
 import React from 'react'
 
-const LogementProprietaire = () => {
-  return <div className="logement-proprietaire">nom du proprietaire</div>
+const LogementProprietaire = (props) => {
+  const nom = props.nom
+  return <div className="logement-proprietaire">{nom}</div>
 }
 
 export default LogementProprietaire

@@ -1,7 +1,6 @@
-import React from 'react'
-
-const LogementNom = () => {
-  return <h2 className="logement-nom">logement nom</h2>
+const LogementNom = (props) => {
+  const logementTitle = props.logementTitle
+  return <h2 className="logement-nom">{logementTitle}</h2>
 }
 
 export default LogementNom

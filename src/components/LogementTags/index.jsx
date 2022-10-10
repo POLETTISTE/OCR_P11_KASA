@@ -1,7 +1,6 @@
-import React from 'react'
-
-const LogementTags = () => {
-  return <div className="logement-tags">LogementTags</div>
+const LogementTags = (props) => {
+  const tag = props.tag
+  return <div className="logement-tags">{tag}</div>
 }
 
 export default LogementTags
