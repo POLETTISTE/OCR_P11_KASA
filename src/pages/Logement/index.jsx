@@ -5,12 +5,10 @@ import LogementTags from '../../components/LogementTags'
 import LogementProprietaire from '../../components/LogementProprietaire'
 import LogementAvatar from '../../components/LogementAvatar'
 import LogementEtoiles from '../../components/LogementEtoiles'
-
-import dataLogement from '../../data/data.json'
-import React, { Fragment, useEffect, useState } from 'react'
-
 import Dropdown from '../../components/Dropdown'
 import Thumb from '../../components/Thumb'
+import dataLogement from '../../data/data.json'
+import React, { Fragment, useEffect, useState } from 'react'
 
 const Logement = () => {
   const [appartements, setAppartements] = useState()
@@ -35,12 +33,11 @@ const Logement = () => {
         {appartements &&
           appartements.map((appartement, index) => {
             return (
-              <Fragment>
+              <Fragment key={index}>
                 <Thumb
-                  key={index}
                   className="logement-infos-home"
                   texte={appartement.title}
-                  image={appartement.cover}
+                  image={appartement.pictures[0]}
                 />
                 <div className="logement-infos">
                   <LogementLocalisation localisation={appartement.location} />
@@ -56,13 +53,16 @@ const Logement = () => {
                     <LogementAvatar avatar={appartement.host.picture} />
                   </div>
                 </div>
+                <div className="dropdowns">
+                  <Dropdown
+                    titre="description"
+                    texte={appartement.description}
+                  />
+                  <Dropdown titre="équipements" texte="a renseigner" />
+                </div>
               </Fragment>
             )
           })}
-      </div>
-      <div className="dropdowns">
-        <Dropdown titre="description" texte="texte" />
-        <Dropdown titre="équipements" texte="texte" />
       </div>
     </div>
   )
