@@ -13,11 +13,6 @@ import React, { Fragment, useEffect, useState } from 'react'
 const Logement = () => {
   const [appartements, setAppartements] = useState()
   const urlcourante = document.location.pathname
-  // alert(' URL : \n' + urlcourante)
-
-  // const params = new URLSearchParams(urlcourante)
-  // const q = parseInt(params.get('Logement')) // is the number 123
-  // console.log(q)
 
   const getApiData =
     // async
@@ -51,10 +46,12 @@ const Logement = () => {
                   />
                   <div className="logement-infos">
                     <LogementLocalisation localisation={appartement.location} />
-                    {appartements &&
-                      appartement.tags.map((item, index) => {
-                        return <LogementTags tag={item} />
-                      })}
+                    <div className="logement-tags">
+                      {appartements &&
+                        appartement.tags.map((item, index) => {
+                          return <LogementTags tag={item} />
+                        })}
+                    </div>
                   </div>
                   <div className="proprietaire-rating">
                     <LogementEtoiles etoiles={appartement.rating} />
