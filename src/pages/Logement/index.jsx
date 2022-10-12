@@ -53,10 +53,10 @@ const Logement = () => {
                         })}
                     </div>
                   </div>
-                  <div className="proprietaire-rating">
+                  <div className="logement-proprietaire-rating">
                     <LogementEtoiles etoiles={appartement.rating} />
-                    <div className="proprietaire-infos">
-                      <LogementProprietaire nom={appartement.host.name} />
+                    <div className="logement-proprietaire-infos">
+                      <LogementProprietaire nomPrenom={appartement.host.name} />
                       <LogementAvatar avatar={appartement.host.picture} />
                     </div>
                   </div>

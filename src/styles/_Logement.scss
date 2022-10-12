@@ -13,6 +13,10 @@
   margin-right: 20px;
 }
 .logement-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   margin: 0;
   border-radius: 10px;
   width: 100%;
@@ -20,17 +24,21 @@
   height: 255px;
 }
 
-.logement-nom {
-  width: 90%;
-  max-width: 340px;
-  position: relative;
-  left: 10px;
-  bottom: 55px;
-  margin: 0;
+.logement-proprietaire-infos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logement-proprietaire {
   color: white;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 143%;
   font-weight: 500;
+  p {
+    margin: 0;
+    text-align: end;
+  }
 }
 .logement-localisation {
   margin: 0;
@@ -70,13 +78,13 @@
   line-height: 143%;
 }
 
-.proprietaire-rating {
+.logement-proprietaire-rating {
+  margin: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .logement-etoiles {
-  margin: 20px;
   color: $color-red;
   font-size: 18px;
 }
@@ -150,6 +158,7 @@
   display: flex;
   align-items: center;
   margin: 0;
+  padding-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
   height: fit-content;
@@ -159,10 +168,6 @@
   p {
     font-size: 12px;
     padding-left: 10px;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // flex-direction: column;
     margin: 0;
     margin-top: 5px;
     margin-bottom: 5px;

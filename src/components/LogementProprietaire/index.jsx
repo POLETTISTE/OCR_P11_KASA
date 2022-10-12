@@ -1,8 +1,14 @@
-import React from 'react'
-
 const LogementProprietaire = (props) => {
-  const nom = props.nom
-  return <div className="logement-proprietaire">{nom}</div>
+  const nomPrenom = props.nomPrenom
+  const nom = nomPrenom.split(' ').pop()
+  const prenom = nomPrenom.split(' ').shift()
+
+  return (
+    <div className="logement-proprietaire">
+      <p>{prenom}</p>
+      <p>{nom}</p>
+    </div>
+  )
 }
 
 export default LogementProprietaire
