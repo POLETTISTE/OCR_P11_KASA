@@ -30,7 +30,7 @@ const Logement = () => {
 
   return (
     <div>
-      <div className="home-gallerie">
+      <div className="logement-gallerie">
         {appartements &&
           //filtrer par pathname
           appartements
@@ -40,10 +40,11 @@ const Logement = () => {
                 <Fragment key={index}>
                   <Thumb
                     className="logement-infos-home"
-                    texte={appartement.title}
+                    // texte={appartement.title}
                     image={appartement.pictures[0]}
                     id={appartement.id}
                   />
+                  <p>{appartement.title}</p>
                   <div className="logement-infos">
                     <LogementLocalisation localisation={appartement.location} />
                     <div className="logement-tags">
