@@ -65,7 +65,13 @@ const Logement = () => {
                       titre="description"
                       texte={appartement.description}
                     />
-                    <Dropdown titre="équipements" texte="a renseigner" />
+
+                    <Dropdown
+                      titre="équipements"
+                      texte={appartement.equipments.map((item, index) => {
+                        return <li>{item}</li>
+                      })}
+                    />
                   </div>
                 </Fragment>
               )
