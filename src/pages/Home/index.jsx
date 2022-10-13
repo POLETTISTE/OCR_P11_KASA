@@ -31,7 +31,6 @@ function Home() {
               <Link to={`/Logement/${appartement.id}`} key={index}>
                 <Thumb
                   className="logement-infos-home"
-                  id={appartement.id}
                   texte={appartement.title}
                   image={appartement.cover}
                 />
