@@ -10,6 +10,7 @@ import Thumb from '../../components/Thumb'
 import dataLogement from '../../data/data.json'
 import React, { Fragment, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { clearConfigCache } from 'prettier'
 
 const Logement = () => {
   const [appartements, setAppartements] = useState()
@@ -22,6 +23,7 @@ const Logement = () => {
       // .then((response) => response.json())
       // .then((data) => setAppartements(data))
       // .catch((err) => console.log(err))
+
       setAppartements(dataLogement)
     }
 
@@ -65,12 +67,12 @@ const Logement = () => {
                   </div>
                   <div className="dropdowns">
                     <Dropdown
-                      titre="description"
+                      titre="Description"
                       texte={appartement.description}
                     />
 
                     <Dropdown
-                      titre="équipements"
+                      titre="Équipements"
                       texte={appartement.equipments.map((item, index) => {
                         return <li key={index}>{item}</li>
                       })}
