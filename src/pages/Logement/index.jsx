@@ -50,7 +50,7 @@ const Logement = () => {
                     <div className="logement-tags">
                       {appartements &&
                         appartement.tags.map((item, index) => {
-                          return <LogementTags tag={item} />
+                          return <LogementTags key={index} tag={item} />
                         })}
                     </div>
                   </div>
@@ -70,7 +70,7 @@ const Logement = () => {
                     <Dropdown
                       titre="équipements"
                       texte={appartement.equipments.map((item, index) => {
-                        return <li>{item}</li>
+                        return <li key={index}>{item}</li>
                       })}
                     />
                   </div>
