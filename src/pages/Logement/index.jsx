@@ -9,6 +9,7 @@ import Dropdown from '../../components/Dropdown'
 import Thumb from '../../components/Thumb'
 import dataLogement from '../../data/data.json'
 import React, { Fragment, useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Logement = () => {
   const [appartements, setAppartements] = useState()
@@ -44,6 +45,7 @@ const Logement = () => {
                     image={appartement.pictures[0]}
                     id={appartement.id}
                   />
+
                   <p>{appartement.title}</p>
                   <div className="logement-infos">
                     <LogementLocalisation localisation={appartement.location} />

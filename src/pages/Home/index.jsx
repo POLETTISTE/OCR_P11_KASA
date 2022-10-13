@@ -2,6 +2,7 @@ import Banner from '../../components/Banner'
 import Thumb from '../../components/Thumb'
 import dataLogement from '../../data/data.json'
 import React, { Fragment, useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 function Home() {
   const [appartements, setAppartements] = useState()
@@ -27,13 +28,14 @@ function Home() {
         {appartements &&
           appartements.map((appartement, index) => {
             return (
-              <Thumb
-                key={index}
-                className="logement-infos-home"
-                id={appartement.id}
-                texte={appartement.title}
-                image={appartement.cover}
-              />
+              <Link to={`/Logement/${appartement.id}`} key={index}>
+                <Thumb
+                  className="logement-infos-home"
+                  id={appartement.id}
+                  texte={appartement.title}
+                  image={appartement.cover}
+                />
+              </Link>
             )
           })}
       </div>
