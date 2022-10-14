@@ -28,13 +28,18 @@ function Home() {
         {appartements &&
           appartements.map((appartement, index) => {
             return (
-              <Link to={`/Logement/${appartement.id}`} key={index}>
-                <Thumb
-                  className="logement-infos-home"
-                  texte={appartement.title}
-                  image={appartement.cover}
-                />
-              </Link>
+              <div
+                className="logement-infos-home logement-image-max-width {
+                "
+              >
+                <Link to={`/Logement/${appartement.id}`} key={index}>
+                  <Thumb
+                    className="logement-infos-home logement-image-max-width"
+                    texte={appartement.title}
+                    image={appartement.cover}
+                  />
+                </Link>
+              </div>
             )
           })}
       </div>

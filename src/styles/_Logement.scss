@@ -29,6 +29,10 @@
   object-fit: cover;
 }
 
+.logement-image-max-width {
+  max-width: 340px;
+}
+
 .logement-nom {
   text-shadow: 0.5px 0.5px black;
   position: absolute;

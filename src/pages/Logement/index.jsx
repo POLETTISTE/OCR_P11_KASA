@@ -10,7 +10,7 @@ import Dropdown from '../../components/Dropdown'
 import Thumb from '../../components/Thumb'
 import dataLogement from '../../data/data.json'
 import React, { Fragment, useEffect, useState } from 'react'
-import { useParams, Navigate, redirect } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
 const Logement = () => {
   const [appartements, setAppartements] = useState()
@@ -47,12 +47,15 @@ const Logement = () => {
             .map((appartement, index) => {
               return (
                 <Fragment key={index}>
-                  <Thumb
-                    className="logement-infos-home"
-                    // texte={appartement.title}
-                    image={appartement.pictures[0]}
-                    id={appartement.id}
-                  />
+                  <div className="logement-infos-home ">
+                    <Thumb
+                      // texte={appartement.title}
+                      //  max-width: 340px;
+
+                      image={appartement.pictures[0]}
+                      id={appartement.id}
+                    />
+                  </div>
 
                   <p>{appartement.title}</p>
                   <div className="logement-infos">
