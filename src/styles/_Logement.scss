@@ -7,8 +7,10 @@
 }
 
 .logement-infos-home {
+  position: relative;
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 20px;
   + p {
     margin: 0;
     margin-left: 20px;
@@ -28,7 +30,10 @@
 }
 
 .logement-nom {
-  position: relative;
+  text-shadow: 0.5px 0.5px black;
+  position: absolute;
+  top: 73%;
+  left: 2%;
   margin-left: 10px;
   margin-right: 10px;
   bottom: 60px;
