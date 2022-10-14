@@ -13,7 +13,7 @@
   background-repeat: no-repeat;
   background-color: #595959;
   background-blend-mode: overlay;
-  object-fit: cover;
+  background-size: cover;
 
   &-home {
     background-image: url('../assets/banner-home.png');

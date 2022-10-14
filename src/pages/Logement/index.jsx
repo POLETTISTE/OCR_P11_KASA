@@ -16,6 +16,7 @@ const Logement = () => {
   const [appartements, setAppartements] = useState()
   // const [isValid, setIsValid] = useState(false)
   let { id } = useParams()
+  const verifyIfIsValid = id.match(/^[a-z0-9]{8}$/i) !== null
 
   const getApiData =
     // async
@@ -31,8 +32,6 @@ const Logement = () => {
   useEffect(() => {
     getApiData()
   }, [])
-
-  const verifyIfIsValid = id.match(/^[a-z0-9]{8}$/i) !== null
 
   if (!verifyIfIsValid) {
     return <Error />
