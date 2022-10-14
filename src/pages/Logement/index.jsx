@@ -1,5 +1,6 @@
 // import LogementImage from '../../components/LogementImage'
 // import LogementNom from '../../components/LogementNom'
+import Error from '../Error'
 import LogementLocalisation from '../../components/LogementLocalisation'
 import LogementTags from '../../components/LogementTags'
 import LogementProprietaire from '../../components/LogementProprietaire'
@@ -9,11 +10,11 @@ import Dropdown from '../../components/Dropdown'
 import Thumb from '../../components/Thumb'
 import dataLogement from '../../data/data.json'
 import React, { Fragment, useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Navigate, redirect } from 'react-router-dom'
 
 const Logement = () => {
   const [appartements, setAppartements] = useState()
-  const urlcourante = document.location.pathname
+  // const [isValid, setIsValid] = useState(false)
   let { id } = useParams()
 
   const getApiData =
@@ -30,7 +31,12 @@ const Logement = () => {
   useEffect(() => {
     getApiData()
   }, [])
-  // const Invalid = id.match(/^[a-z0-9]{8}$/i) === null
+
+  const verifyIfIsValid = id.match(/^[a-z0-9]{8}$/i) !== null
+
+  if (!verifyIfIsValid) {
+    return <Error />
+  }
 
   return (
     <div>
