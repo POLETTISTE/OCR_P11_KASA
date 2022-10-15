@@ -7,7 +7,7 @@ import LogementProprietaire from '../../components/LogementProprietaire'
 import LogementAvatar from '../../components/LogementAvatar'
 import LogementEtoiles from '../../components/LogementEtoiles'
 import Dropdown from '../../components/Dropdown'
-import Thumb from '../../components/Thumb'
+import Caroussel from '../../components/Caroussel'
 import dataLogement from '../../data/data.json'
 import React, { Fragment, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
@@ -48,10 +48,7 @@ const Logement = () => {
               return (
                 <Fragment key={`${index}-${appartement.id}`}>
                   <div className="logement-infos-home ">
-                    <Thumb
-                      image={appartement.pictures[0]}
-                      id={appartement.id}
-                    />
+                    <Caroussel images={appartement.pictures} />
                   </div>
 
                   <p>{appartement.title}</p>
