@@ -1,20 +1,27 @@
 @import '../styles/App.scss';
 .home-gallerie {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   justify-content: space-between;
   justify-items: center;
   align-self: center;
   gap: 20px;
   margin-bottom: 20px;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  padding: 40px;
 }
-
-@media all and (min-width: 768px) {
+@media all and (min-width: 768px) and (max-width: 991px) {
   .home-gallerie {
-    background-color: #f6f6f6;
-    border-radius: 25px;
-    padding: 40px;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media all and (max-width: 767px) {
+  .home-gallerie {
+    background-color: white;
+    border-radius: 0px;
+    padding: 0px;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
