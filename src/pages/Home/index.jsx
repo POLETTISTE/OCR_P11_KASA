@@ -28,10 +28,7 @@ function Home() {
         {appartements &&
           appartements.map((appartement, index) => {
             return (
-              <div
-                className="logement-infos-home logement-image-max-width {
-                "
-              >
+              <div className="logement-infos-home logement-image-max-width">
                 <Link to={`/Logement/${appartement.id}`} key={index}>
                   <Thumb
                     className="logement-infos-home logement-image-max-width"
