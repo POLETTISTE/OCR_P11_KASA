@@ -51,23 +51,31 @@ const Logement = () => {
                     <Caroussel images={appartement.pictures} />
                   </div>
 
-                  <p>{appartement.title}</p>
-                  <div className="logement-infos">
-                    <LogementLocalisation localisation={appartement.location} />
-                    <div className="logement-tags">
-                      {appartements &&
-                        appartement.tags.map((item, index) => {
-                          return (
-                            <LogementTags key={`${index}-tag`} tag={item} />
-                          )
-                        })}
+                  <div className="logement-all-infos">
+                    <div className="logement-infos">
+                      <p className="logement-infos-title">
+                        {appartement.title}
+                      </p>
+                      <LogementLocalisation
+                        localisation={appartement.location}
+                      />
+                      <div className="logement-tags">
+                        {appartements &&
+                          appartement.tags.map((item, index) => {
+                            return (
+                              <LogementTags key={`${index}-tag`} tag={item} />
+                            )
+                          })}
+                      </div>
                     </div>
-                  </div>
-                  <div className="logement-proprietaire-rating">
-                    <LogementEtoiles etoiles={appartement.rating} />
-                    <div className="logement-proprietaire-infos">
-                      <LogementProprietaire nomPrenom={appartement.host.name} />
-                      <LogementAvatar avatar={appartement.host.picture} />
+                    <div className="logement-proprietaire-rating">
+                      <div className="logement-proprietaire-infos">
+                        <LogementProprietaire
+                          nomPrenom={appartement.host.name}
+                        />
+                        <LogementAvatar avatar={appartement.host.picture} />
+                      </div>
+                      <LogementEtoiles etoiles={appartement.rating} />
                     </div>
                   </div>
                   <div className="dropdowns">

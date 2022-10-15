@@ -20,11 +20,12 @@
 
 .arrow-previous,
 .arrow-next {
-  top: 50%;
+  width: 96px;
+  height: 119.64px;
+  top: 40%;
   z-index: 1;
   margin: 0;
   position: absolute;
-  height: 24px;
 }
 .arrow-previous {
   left: 10px;
@@ -32,4 +33,21 @@
 
 .arrow-next {
   right: 10px;
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .arrow-previous,
+  .arrow-next {
+    width: 64.19px;
+    height: 80px;
+    top: 50%;
+  }
+}
+@media all and (max-width: 767px) {
+  .arrow-previous,
+  .arrow-next {
+    width: 24px;
+    height: 24px;
+    top: 50%;
+  }
 }
