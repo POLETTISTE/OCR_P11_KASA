@@ -1,7 +1,6 @@
 @import '../styles/App.scss';
 .home-gallerie {
   display: grid;
-  // grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));
   grid-template-columns: repeat(1, 1fr);
   justify-content: space-between;
   justify-items: center;
@@ -21,13 +20,10 @@
 
 .logement-infos-home {
   position: relative;
-  // margin: 20px;
   + p {
     font-size: 18px;
     font-weight: 500;
     margin: 0;
-    // margin-left: 20px;
-    // margin-right: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -39,8 +35,8 @@
   text-align: center;
   border-radius: 10px;
   width: 100%;
-  height: 255px;
-  // max-height: 415px;
+  min-height: 255px;
+  max-height: 415px;
   object-fit: cover;
 }
 
@@ -77,13 +73,10 @@
 }
 .logement-localisation {
   margin: 0;
-  // margin-left: 20px;
-  // margin-right: 20px;
   margin-bottom: 10px;
   color: $color-red;
   font-size: 14px;
   font-weight: 500;
-
   line-height: 143%;
   text-align: Left;
   vertical-align: Bottom;
@@ -93,7 +86,6 @@
   display: flex;
   align-items: center;
   width: 100%;
-  // margin-left: 20px;
   flex-wrap: wrap;
 }
 
@@ -107,7 +99,6 @@
   justify-content: center;
   align-items: center;
   align-self: center;
-
   padding: 2px 20px;
   height: 18px;
   border-radius: 10px;
@@ -162,8 +153,6 @@
   align-items: center;
   flex-direction: column;
   margin: 0;
-  // margin-left: 20px;
-  // margin-right: 20px;
   margin-bottom: 20px;
 }
 
