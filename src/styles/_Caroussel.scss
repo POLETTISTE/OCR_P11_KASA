@@ -1,14 +1,20 @@
 .caroussel {
   display: flex;
-  &-count {
-    margin: 0;
-    position: absolute;
-    color: white;
-    font-size: 18px;
-    line-height: 143%;
-    bottom: 5%;
-    left: 50%;
-    z-index: 1;
+}
+.caroussel-count {
+  display: none;
+  margin: 0;
+  position: absolute;
+  color: white;
+  font-size: 18px;
+  line-height: 143%;
+  bottom: 5%;
+  left: 47%;
+  z-index: 1;
+}
+@media all and (min-width: 992px) {
+  .caroussel-count {
+    display: block;
   }
 }
 
