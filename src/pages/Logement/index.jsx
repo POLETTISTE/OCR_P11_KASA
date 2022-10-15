@@ -46,7 +46,7 @@ const Logement = () => {
             .filter((appartement) => id.includes(appartement.id))
             .map((appartement, index) => {
               return (
-                <Fragment key={index}>
+                <Fragment key={`${index}-${appartement.id}`}>
                   <div className="logement-infos-home ">
                     <Thumb
                       image={appartement.pictures[0]}
@@ -60,7 +60,9 @@ const Logement = () => {
                     <div className="logement-tags">
                       {appartements &&
                         appartement.tags.map((item, index) => {
-                          return <LogementTags key={index} tag={item} />
+                          return (
+                            <LogementTags key={`${index}-tag`} tag={item} />
+                          )
                         })}
                     </div>
                   </div>

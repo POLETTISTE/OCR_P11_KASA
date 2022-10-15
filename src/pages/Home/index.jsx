@@ -23,13 +23,20 @@ function Home() {
 
   return (
     <Fragment>
-      <Banner text="Chez vous, partout et ailleurs" bg="banner-home" />
+      <Banner
+        text="Chez vous, partout et ailleurs"
+        bg="banner-home"
+        key="banner-home"
+      />
       <div className="home-gallerie">
         {appartements &&
           appartements.map((appartement, index) => {
             return (
-              <div className="logement-infos-home logement-image-max-width">
-                <Link to={`/Logement/${appartement.id}`} key={index}>
+              <div
+                className="logement-infos-home logement-image-max-width"
+                key={`${index}-${appartement.id}`}
+              >
+                <Link to={`/Logement/${appartement.id}`}>
                   <Thumb
                     className="logement-infos-home logement-image-max-width"
                     texte={appartement.title}
