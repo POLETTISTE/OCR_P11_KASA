@@ -49,9 +49,6 @@ const Logement = () => {
                 <Fragment key={index}>
                   <div className="logement-infos-home ">
                     <Thumb
-                      // texte={appartement.title}
-                      //  max-width: 340px;
-
                       image={appartement.pictures[0]}
                       id={appartement.id}
                     />
