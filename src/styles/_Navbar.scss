@@ -6,7 +6,7 @@
 
 .navbar {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   display: flex;
   color: $color-red;
   font-size: 12px;
@@ -35,6 +35,8 @@
 
 @media all and (max-width: 767px) {
   .navbar {
+    margin-bottom: 20px;
+
     & nav {
       & a {
         text-transform: uppercase;
