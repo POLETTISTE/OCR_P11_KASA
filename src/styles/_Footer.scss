@@ -8,6 +8,12 @@ footer {
   margin-left: -100px;
   margin-right: -100px;
 }
+@media all and (min-width: 768px) and (max-width: 991px) {
+  footer {
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+}
 @media all and (max-width: 767px) {
   footer {
     margin-left: -20px;
