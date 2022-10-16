@@ -8,24 +8,18 @@ const Dropdown = (props) => {
   const [isOpen, setIsOpen] = useState(false)
 
   return isOpen ? (
-    <div className="logement-dropdown">
-      <div
-        className="logement-dropdown-title-arrow"
-        onClick={() => setIsOpen(false)}
-      >
+    <div className="dropdown">
+      <div className="dropdown-title-arrow" onClick={() => setIsOpen(false)}>
         <h3>{titre}</h3>
         <img src={arrow} alt="arrow" className="rotate" />
       </div>
-      <div className="logement-dropdown-texte">
+      <div className="dropdown-texte">
         <p>{texte}</p>
       </div>
     </div>
   ) : (
-    <div className="logement-dropdown">
-      <div
-        className="logement-dropdown-title-arrow"
-        onClick={() => setIsOpen(true)}
-      >
+    <div className="dropdown">
+      <div className="dropdown-title-arrow" onClick={() => setIsOpen(true)}>
         <h3>{titre}</h3>
         <img src={arrow} alt="arrow" className="no-rotate" />
       </div>

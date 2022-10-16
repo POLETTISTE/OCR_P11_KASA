@@ -7,3 +7,143 @@
   rotate: (0deg);
   transition-duration: 500ms;
 }
+
+.dropdown {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  margin-bottom: 20px;
+  // width: 100%;
+}
+
+@media all and (max-width: 767px) {
+  .dropdown {
+    width: auto;
+  }
+}
+
+.dropdown-title-arrow {
+  z-index: 1;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 52px;
+  background-color: $color-red;
+
+  h3 {
+    margin: 0;
+    height: 29.93px;
+    padding-left: 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 143%;
+
+    display: flex;
+    align-items: center;
+  }
+  img {
+    width: 32px;
+    // height: 32px;
+    margin-right: 10px;
+  }
+}
+@media all and (max-width: 767px) {
+  .dropdown-title-arrow {
+    height: 29.93px;
+    h3 {
+      font-size: 13px;
+    }
+    img {
+      width: 18.42px;
+    }
+  }
+}
+
+.dropdown-texte {
+  display: flex;
+  position: relative;
+  bottom: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 249px;
+  overflow: scroll;
+  width: 100%;
+  background-color: #f6f6f6;
+
+  p {
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 143%;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .dropdown-texte {
+    padding-bottom: 0px;
+
+    height: auto;
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+// PAGE ABOUT
+.dropdowns-page-about {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+@media all and (max-width: 767px) {
+  .dropdowns-page-about {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+#root > div > div.dropdowns-page-about > div > div.dropdown-texte {
+  height: auto;
+  padding-bottom: 0;
+}
+
+@media all and (max-width: 767px) {
+  #root > div > div.dropdowns-page-about > div > div.dropdown-texte {
+    height: 143.65px;
+  }
+}
+
+// PAGE LOGEMENT
+.dropdowns-page-logement {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media all and (max-width: 767px) {
+  .dropdowns-page-logement {
+    display: flex;
+    flex-direction: column;
+  }
+}
+#root > div > div > div.dropdowns-page-logement > div {
+  width: 45%;
+}
+@media all and (max-width: 767px) {
+  #root > div > div > div.dropdowns-page-logement > div {
+    width: 100%;
+  }
+}

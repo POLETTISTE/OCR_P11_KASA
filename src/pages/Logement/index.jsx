@@ -78,7 +78,7 @@ const Logement = () => {
                       <LogementEtoiles etoiles={appartement.rating} />
                     </div>
                   </div>
-                  <div className="dropdowns">
+                  <div className="dropdowns-page-logement">
                     <Dropdown
                       titre="Description"
                       texte={appartement.description}
