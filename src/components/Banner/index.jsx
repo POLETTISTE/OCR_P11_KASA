@@ -4,7 +4,7 @@ const Banner = (props) => {
 
   return (
     <div className={` banner ${bg} `}>
-      <span>{text}</span>
+      <div>{text}</div>
     </div>
   )
 }

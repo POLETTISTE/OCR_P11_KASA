@@ -27,7 +27,7 @@
     background-position: center;
   }
 
-  & span {
+  & div {
     font-size: 48px;
     width: 705px;
     margin-top: 0px;
@@ -42,7 +42,7 @@
 }
 @media all and (min-width: 768px) and (max-width: 991px) {
   .banner {
-    & span {
+    & div {
       font-size: 32px;
       width: 500px;
     }
@@ -62,11 +62,10 @@
     &-home {
       height: 111px;
     }
-    & span {
+    & div {
       font-size: 24px;
-      margin-left: 40px;
-      margin-right: 20px;
-      width: 335px;
+
+      width: 78%;
     }
   }
 }
