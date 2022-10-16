@@ -69,11 +69,11 @@
   object-fit: cover;
 }
 
-// @media all and (min-width: 768px) {
-//   .logement-image {
-//     // height: 415px;
-//   }
-// }
+@media all and (max-width: 767px) {
+  .logement-image {
+    height: 255px;
+  }
+}
 
 .logement-image-max-width {
   max-width: 340px;
