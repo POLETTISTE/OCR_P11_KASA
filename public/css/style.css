@@ -1,7 +1,7 @@
 /* TEXT COLOR */
 /* FONTS */
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin-top: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -29,7 +29,7 @@ li {
 /* TEXT COLOR */
 /* FONTS */
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin-top: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -115,7 +115,7 @@ footer {
 /* TEXT COLOR */
 /* FONTS */
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin-top: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -155,11 +155,11 @@ li {
   background-size: cover;
 }
 .banner-home {
-  background-image: url("../assets/banner-home.png");
+  background-image: url('../assets/banner-home.png');
   height: 111px;
 }
 .banner-about {
-  background-image: url("../assets/banner-about-small.png");
+  background-image: url('../assets/banner-about-small.png');
   height: 223px;
 }
 .banner span {
@@ -182,7 +182,7 @@ li {
     border-radius: 25px;
   }
   .banner-about {
-    background-image: url("../assets/banner-about.png");
+    background-image: url('../assets/banner-about.png');
     height: 223px;
   }
   .banner span {
@@ -193,7 +193,7 @@ li {
 /* TEXT COLOR */
 /* FONTS */
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin-top: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -236,7 +236,7 @@ li {
   margin-right: 30px;
   height: 52px;
   color: #ff6060;
-  font-style: medium;
+  font-weight: 500;
   font-size: 18px;
   line-height: 143%;
   text-align: center;
@@ -268,7 +268,7 @@ li {
 /* TEXT COLOR */
 /* FONTS */
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin-top: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -356,7 +356,7 @@ li {
 /* TEXT COLOR */
 /* FONTS */
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin-top: 0px;
   margin-left: 0px;
   margin-right: 0px;
