@@ -53,6 +53,10 @@
     margin-right: 10px;
   }
 }
+
+#root > div > div.dropdowns-page-about > div:nth-child(1) > div {
+  height: 47px;
+}
 @media all and (max-width: 767px) {
   .dropdown-title-arrow {
     height: 29.93px;
@@ -62,6 +66,9 @@
     img {
       width: 18.42px;
     }
+  }
+  #root > div > div.dropdowns-page-about > div:nth-child(1) > div {
+    height: 30px;
   }
 }
 
