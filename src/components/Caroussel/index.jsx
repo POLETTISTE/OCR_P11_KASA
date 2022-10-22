@@ -7,18 +7,14 @@ const Caroussel = (props) => {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const handlePreviousImage = () => {
-    if (currentIndex === 0) {
-      setCurrentIndex(images.length - 1)
-    } else {
-      setCurrentIndex(currentIndex - 1)
-    }
+    currentIndex === 0
+      ? setCurrentIndex(images.length - 1)
+      : setCurrentIndex(currentIndex - 1)
   }
   const handleNextImage = () => {
-    if (currentIndex === images.length - 1) {
-      setCurrentIndex(0)
-    } else {
-      setCurrentIndex(currentIndex + 1)
-    }
+    currentIndex === images.length - 1
+      ? setCurrentIndex(0)
+      : setCurrentIndex(currentIndex + 1)
   }
 
   return (
